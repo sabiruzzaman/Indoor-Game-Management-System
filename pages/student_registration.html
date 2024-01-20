@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+
+    <!-- Bootstrap CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- Ubuntu Font CDN Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../assets/css/registration_page.css" />
+  </head>
+
+  <body
+    class="d-flex align-items-center justify-content-center"
+    style="height: 100vh"
+  >
+    <div class="card m-4 border-0 shadow">
+      <div class="card-body">
+        <div class="logo-container">
+          <img
+            src="../assets/images/logo.png"
+            alt="seu logo"
+            class="logo-img"
+          />
+        </div>
+        <h2 class="text-center mb-3" style="padding-top: 10px">
+          Student Registration
+        </h2>
+
+        <form action="register_student.php" method="post">
+          <div class="form-group mb-3">
+            <label for="student_name" class="font-weight-bold"
+              >Student Name:</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="student_name"
+              required
+            />
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="student_id" class="font-weight-bold">Student ID:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="student_id"
+              required
+            />
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="batch_no" class="font-weight-bold">Batch No:</label>
+            <input type="text" class="form-control" name="batch_no" required />
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="department" class="font-weight-bold">Department:</label>
+            <select class="form-control" name="department" required>
+              <option value="" selected disabled>Select Department</option>
+              <option value="1">
+                Department of ComputerScience &amp; Engineering
+              </option>
+              <option value="2">
+                Department of Electrical &amp; Electronic Engineering
+              </option>
+              <option value="3">Department of Pharmacy</option>
+              <option value="4">Department of Textile Engineering</option>
+              <option value="5">Department of Architecture</option>
+              <option value="6">Bachelor of Business Administration</option>
+              <option value="7">Master of Business Administration</option>
+              <option value="8">Department of Law</option>
+              <option value="9">Department of English</option>
+              <option value="10">
+                Department of Bangla Language and Literature
+              </option>
+              <option value="11">Department of Economics</option>
+              <option value="12">Department of Development Studies</option>
+            </select>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary btn-block btn-lg"
+            style="margin-top: 30px"
+          >
+            Register Student
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js CDN Links (required for some Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Registration</title>
+
+    <!-- Bootstrap CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- Ubuntu Font CDN Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../assets/css/registration_page.css" />
+  </head>
+
+  <body
+    class="d-flex align-items-center justify-content-center"
+    style="height: 100vh"
+  >
+    <div class="card m-4 border-0 shadow">
+      <div class="card-body">
+        <div class="logo-container">
+          <img
+            src="../assets/images/logo.png"
+            alt="seu logo"
+            class="logo-img"
+          />
+        </div>
+
+        <h2 class="text-center mb-3" style="padding-top: 10px">
+          Game Registration
+        </h2>
+
+        <form action="register_game.php" method="post">
+          <div class="form-group mb-3">
+            <label for="game_name" class="font-weight-bold">Game Name:</label>
+            <input type="text" class="form-control" name="game_name" required />
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="game_type" class="font-weight-bold">Game Type:</label>
+            <select class="form-control" name="game_type" required>
+              <option value="" selected disabled>Select Game Type</option>
+              <option value="1">Board Games</option>
+              <option value="2">Card Games</option>
+              <option value="3">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="board_number" class="font-weight-bold"
+              >Board Number:</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              name="board_number"
+              required
+            />
+          </div>
+          <div class="form-group mb-3">
+            <label for="max_players" class="font-weight-bold"
+              >Max Players:</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              name="max_players"
+              required
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary btn-block btn-lg"
+            style="margin-top: 30px"
+          >
+            Register Game
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js CDN Links (required for some Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
